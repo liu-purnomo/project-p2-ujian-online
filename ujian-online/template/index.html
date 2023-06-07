@@ -1,0 +1,1888 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ujian Online</title>
+
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="liupurnomo.com">
+    <meta name="description" content="Web for online examination">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/logo.png">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ======================= Header START -->
+
+    <header class="navbar-light fixed-top header-static bg-mode">
+
+        <!-- Logo Nav START -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <!-- Logo START -->
+                <a class="navbar-brand" href="#">
+                    <img class="navbar-brand-item" src="assets/images/logo.png" alt="logo">
+                </a>
+                <!-- Logo END -->
+
+                <!-- Responsive navbar toggler -->
+                <button class="navbar-toggler ms-auto icon-md btn btn-light p-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-animation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+
+                <!-- Main navbar START -->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <!-- Nav Search START -->
+                    <div class="nav mt-3 mt-lg-0 flex-nowrap align-items-center px-4 px-lg-0">
+                        <div class="nav-item w-100">
+                            <form class="rounded position-relative">
+                                <input class="form-control ps-5 bg-light" type="search" placeholder="Search..."
+                                    aria-label="Search">
+                                <button
+                                    class="btn bg-transparent px-2 py-0 position-absolute top-50 start-0 translate-middle-y"
+                                    type="submit"><i class="bi bi-search fs-5"> </i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Nav Search END -->
+
+                    <ul class="navbar-nav navbar-nav-scroll ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">List Ujian</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Main navbar END -->
+
+                <!-- Nav right START -->
+                <ul class="nav flex-nowrap align-items-center ms-sm-3 list-unstyled">
+                    <li class="nav-item ms-2">
+                        <a class="nav-link icon-md btn btn-light p-0" href="settings.html">
+                            <i class="bi bi-gear-fill fs-6"> </i>
+                        </a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="btn btn-success" href="settings.html">
+                            Login
+                        </a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="btn btn-primary" href="settings.html">
+                            Register
+                        </a>
+                    </li>
+                    <!-- Notification dropdown END -->
+
+                    <li class="nav-item ms-2 dropdown">
+                        <a class="nav-link btn icon-md p-0" href="#" id="profileDropdown" role="button"
+                            data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img class="avatar-img rounded-2" src="assets/images/user.png" alt="">
+                        </a>
+                        <ul class="dropdown-menu dropdown-animation dropdown-menu-end pt-3 small me-md-n3"
+                            aria-labelledby="profileDropdown">
+                            <!-- Profile info -->
+                            <li class="px-3">
+                                <div class="d-flex align-items-center position-relative">
+                                    <!-- Avatar -->
+                                    <div class="avatar me-3">
+                                        <img class="avatar-img rounded-circle" src="assets/images/user.png"
+                                            alt="avatar">
+                                    </div>
+                                    <div>
+                                        <a class="h6 stretched-link" href="#">Liu Purnomo</a>
+                                        <p class="small m-0">User Premium</p>
+                                    </div>
+                                </div>
+                                <a class="dropdown-item btn btn-primary-soft btn-sm my-2 text-center"
+                                    href="#">View profile</a>
+                            </li>
+                            <!-- Links -->
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="bi bi-gear fa-fw me-2"></i>Profile Settings
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a class="dropdown-item bg-danger-soft-hover" href="#">
+                                    <i class="bi bi-power fa-fw me-2"></i>Sign Out
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <!-- Profile START -->
+
+                </ul>
+                <!-- Nav right END -->
+            </div>
+        </nav>
+        <!-- Logo Nav END -->
+    </header>
+    <!-- ======================= Header END -->
+
+    <!-- **************** MAIN CONTENT START **************** -->
+    <main>
+
+        <!-- Container START -->
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <!-- Sidenav START -->
+                <div class="col-lg-3">
+
+                    <!-- Advanced filter responsive toggler START -->
+                    <div class="d-flex align-items-center d-lg-none">
+                        <button class="border-0 bg-transparent" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasSideNavbar" aria-controls="offcanvasSideNavbar">
+                            <span class="btn btn-primary"><i class="bi bi-command"></i></span>
+                            <span class="h6 mb-0 fw-bold d-lg-none ms-2">My profile</span>
+                        </button>
+                    </div>
+                    <!-- Advanced filter responsive toggler END -->
+
+                    <!-- Navbar START-->
+                    <nav class="navbar navbar-expand-lg mx-0">
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSideNavbar">
+                            <!-- Offcanvas header -->
+                            <div class="offcanvas-header">
+                                <button type="button" class="btn-close text-reset ms-auto" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <!-- Offcanvas body -->
+                            <div class="offcanvas-body d-block px-2 px-lg-0">
+                                <!-- Card START -->
+                                <div class="card ">
+                                    <!-- Cover image -->
+                                    <!-- Card body START -->
+                                    <div class="card-body pt-0">
+                                        <div class="text-center">
+                                            <!-- Avatar -->
+                                            <div class=" mt-3 mb-3">
+                                                <a href="#"><img class="img-fluid rounded border border-white border-3"
+                                                        src="assets/images/user.png" alt=""></a>
+                                            </div>
+                                            <!-- Info -->
+                                            <h5 class="mb-2"> <a href="#">Liu Purnomo </a> </h5>
+                                            <p>Member Premium</p>
+                                        </div>
+
+                                        <!-- Divider -->
+                                        <hr>
+
+                                        <!-- Side Nav START -->
+                                        <ul class="nav nav-link-secondary flex-column fw-bold gap-2">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#"> <img class="me-2 h-20px fa-fw"
+                                                        src="assets/images/icon/medal-pin-outline-filled.svg"
+                                                        alt=""><span>Exam Result </span></a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="events.html"> <img class="me-2 h-20px fa-fw"
+                                                        src="assets/images/icon/calendar-outline-filled.svg"
+                                                        alt=""><span>Exam List </span></a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="settings.html"> <img class="me-2 h-20px fa-fw"
+                                                        src="assets/images/icon/cog-outline-filled.svg"
+                                                        alt=""><span>Account Settings </span></a>
+                                            </li>
+                                        </ul>
+                                        <!-- Side Nav END -->
+                                    </div>
+                                    <!-- Card body END -->
+                                    <div class="card-footer text-center py-2">
+                                        <a class="btn btn-link btn-sm" href="#">View Profile </a>
+                                    </div>
+                                </div>
+                                <!-- Card END -->
+                                <!-- Copyright -->
+                                <p class="small text-center mt-1">©2023 <a class="text-body" target="_blank"
+                                        href="https://ujian-online.com/"> Ujian Online </a></p>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- Navbar END-->
+                </div>
+                <!-- Sidenav END -->
+
+                <!-- Main content START -->
+                <div class="col-lg-8 vstack gap-4">
+
+                    <div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Edit My Profile</h5>
+                            </div>
+                            <form>
+                                <div class="card-body">
+                                    <div class="row g-4">
+                                        <div class="col-md-6">
+                                            <label class="form-label">Username</label>
+                                            <input type="text" class="form-control" placeholder="Username here">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Email</label>
+                                            <input type="email" class="form-control" placeholder="Email here">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Full Name</label>
+                                            <input type="text" class="form-control" placeholder="Full name here">
+                                        </div><div class="col-md-6">
+                                            <label class="form-label">Avatar URL</label>
+                                            <input type="text" class="form-control" placeholder="URL avatar">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Phone Number</label>
+                                            <input type="text" class="form-control" placeholder="Phone Number here">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Gender</label>
+                                            <select class="form-select">
+                                                <option value="">Select Gender</option>
+                                                <option value="Male">Male</option>
+                                                <option value="Female">Female</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="text-sm-end">
+                                            <button type="submit" class="btn btn-primary">Update now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <hr>
+                            <h5 class="text-center mt-2 mb-2"> Edit Password </h5>
+                            <hr>
+                            <form>
+                                <div class="card-body">
+                                    <div class="row g-4 ">
+                                        <div class="col">
+                                            <input type="password" class="form-control" placeholder="Old password">
+                                        </div>
+                                        <div class="col">
+                                            <input type="password" class="form-control" placeholder="New password">
+                                        </div>
+                                        <div class="col text-end">
+                                            <button type="submit" class="btn btn-primary">Update Password</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div>
+
+
+
+                        <!-- Page Header START -->
+                        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
+                            <div class="d-block mb-2 mb-md-0">
+                                <h2 class="h4">Create new question</h2>
+                                <p class="mb-0">Add new questions</p>
+                            </div>
+                            <div class="btn-toolbar mb-2 mb-md-0">
+                                <div class="btn-group ms-2 ms-lg-3">
+                                    <button type="button" class="btn btn-outline-dark">Dashboard</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Page Header End -->
+                        <div class="card">
+                            <form>
+                                <div class="card-body">
+                                    <div class="row g-4">
+                                        <div class="col-12">
+                                            <label class="form-label">Question</label>
+                                            <textarea class="form-control" rows="2"
+                                                placeholder="Ex: topics, schedule, etc."></textarea>
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form-label">Answer A</label>
+                                            <textarea class="form-control" rows="2"
+                                                placeholder="Ex: topics, schedule, etc."></textarea>
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form-label">Answer B</label>
+                                            <textarea class="form-control" rows="2"
+                                                placeholder="Ex: topics, schedule, etc."></textarea>
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form-label">Answer C</label>
+                                            <textarea class="form-control" rows="2"
+                                                placeholder="Ex: topics, schedule, etc."></textarea>
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form-label">Answer D</label>
+                                            <textarea class="form-control" rows="2"
+                                                placeholder="Ex: topics, schedule, etc."></textarea>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label class="form-label">Status</label>
+                                            <select class="form-select">
+                                                <option value="">Select Status</option>
+                                                <option value="Free">Free</option>
+                                                <option value="Premium">Premium</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label class="form-label">Answer</label>
+                                            <select class="form-select">
+                                                <option value="">Select Option Answer</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form-label">Explanation</label>
+                                            <textarea class="form-control" rows="2"
+                                                placeholder="Ex: topics, schedule, etc."></textarea>
+                                        </div>
+                                        <div class="col-12 text-end">
+                                            <button type="submit" class="btn btn-primary px-5">Create now</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
+                        <div class="col-lg-9 d-md-flex">
+                            <div class="input-group me-2 me-lg-3 fmxw-300">
+                                <span class="input-group-text">
+                                    <i class="bi bi-search"></i>
+                                </span>
+                                <input type="text" class="form-control" placeholder="Search examination">
+                            </div>
+                            <select class="form-select d-none d-md-inline" aria-label="Message select example 2">
+                                <option selected>All</option>
+                                <option value="1">Premium</option>
+                                <option value="2">Free</option>
+                            </select>
+                        </div>
+                        <div class="btn-toolbar mb-md-0">
+                            <a href="#" class="btn btn-primary-soft d-inline-flex align-items-center"
+                                data-bs-toggle="modal" data-bs-target="#modalCreateEvents">
+                                <i class="bi bi-plus-circle fs-6 fw-bold me-2"></i>
+                                New Exam
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card card-body shadow border-0 table-wrapper table-responsive">
+                        <table class="table user-table table-hover align-items-center">
+                            <thead>
+                                <tr>
+                                    <th class="border-bottom">Title</th>
+                                    <th class="border-bottom">Questions</th>
+                                    <th class="border-bottom">Durations</th>
+                                    <th class="border-bottom">Visibility</th>
+                                    <th class="border-bottom">Status</th>
+                                    <th class="border-bottom">PIN</th>
+                                    <th class="border-bottom">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="d-flex align-items-center">
+                                            <span class="fw-bold">Judul Ujian 1</span>
+                                        </a>
+                                    </td>
+                                    <td><span class="fw-normal">20 Soal</span></td>
+                                    <td><span class="fw-normal">50 Menit</span></td>
+                                    <td><span class="fw-normal text-success">Open</span></td>
+                                    <td><span class="fw-normal">Free</span></td>
+                                    <td><span class="fw-normal">xxxx</span></td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-link text-dark dropdown-toggle-split m-0 p-0"
+                                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <svg class="icon icon-xs" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                            <div class="dropdown-menu dashboard-dropdown dropdown-menu-start mt-2 py-1">
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <i class="bi bi-toggle-off fs-6 text-success me-2"></i>
+                                                    Change Visibility
+                                                </a>
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <i class="bi bi-currency-dollar me-2"></i>
+                                                    Change Status
+                                                </a>
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <i class="bi bi-key me-2"></i>
+                                                    Generate new pin
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                        <svg class="icon icon-xs text-danger ms-1" title="Delete"
+                                            data-bs-toggle="tooltip" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="d-flex align-items-center">
+                                            <span class="fw-bold">Judul Ujian 2</span>
+                                        </a>
+                                    </td>
+                                    <td><span class="fw-normal">20 Soal</span></td>
+                                    <td><span class="fw-normal">50 Menit</span></td>
+                                    <td><span class="fw-normal text-danger">Close</span></td>
+                                    <td><span class="fw-normal">Free</span></td>
+                                    <td><span class="fw-normal">xxxx</span></td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-link text-dark dropdown-toggle-split m-0 p-0"
+                                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <svg class="icon icon-xs" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                            <div class="dropdown-menu dashboard-dropdown dropdown-menu-start mt-2 py-1">
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <i class="bi bi-toggle-on fs-6 text-danger me-2"></i>
+                                                    Change Visibility
+                                                </a>
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <i class="bi bi-currency-dollar me-2"></i>
+                                                    Change Status
+                                                </a>
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <i class="bi bi-key me-2"></i>
+                                                    Generate new pin
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                        <svg class="icon icon-xs text-danger ms-1" title="Delete"
+                                            data-bs-toggle="tooltip" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="d-flex align-items-center">
+                                            <span class="fw-bold">Judul Ujian 1</span>
+                                        </a>
+                                    </td>
+                                    <td><span class="fw-normal">20 Soal</span></td>
+                                    <td><span class="fw-normal">50 Menit</span></td>
+                                    <td><span class="fw-normal text-success">Open</span></td>
+                                    <td><span class="fw-normal text-primary">Premium</span></td>
+                                    <td><span class="fw-normal">xxxx</span></td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-link text-dark dropdown-toggle-split m-0 p-0"
+                                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <svg class="icon icon-xs" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                            <div class="dropdown-menu dashboard-dropdown dropdown-menu-start mt-2 py-1">
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <i class="bi bi-toggle-off fs-6 text-success me-2"></i>
+                                                    Change Visibility
+                                                </a>
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <i class="bi bi-currency-dollar me-2"></i>
+                                                    Change Status
+                                                </a>
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <i class="bi bi-key me-2"></i>
+                                                    Generate new pin
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                        <svg class="icon icon-xs text-danger ms-1" title="Delete"
+                                            data-bs-toggle="tooltip" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </td>
+                                </tr>
+
+
+
+                            </tbody>
+                        </table>
+                        <div
+                            class="card-footer px-3 border-0 d-flex flex-column flex-lg-row align-items-center justify-content-between">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination mb-0">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Previous</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item active">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">4</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">5</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="fw-normal small mt-4 mt-lg-0">Showing <b>5</b> out of <b>25</b> entries</div>
+                        </div>
+                    </div>
+
+
+                    <!-- User Grade List START -->
+
+                    <!-- Page Header START -->
+                    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
+                        <div class="d-block mb-2 mb-md-0">
+                            <h2 class="h4">Users Grade List</h2>
+                            <p class="mb-0">All user exam result.</p>
+                        </div>
+                        <div class="btn-toolbar mb-2 mb-md-0">
+                            <div class="btn-group ms-2 ms-lg-3">
+                                <button type="button" class="btn btn-outline-dark">Dashboard</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Page Header End -->
+                    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-2">
+                        <div class="col-lg-9 d-md-flex">
+                            <div class="input-group me-2 me-lg-3 fmxw-300">
+                                <span class="input-group-text">
+                                    <i class="bi bi-search"></i>
+                                </span>
+                                <input type="text" class="form-control" placeholder="Search examination result">
+                            </div>
+                            <select class="form-select d-none d-md-inline" aria-label="Message select example 2">
+                                <option selected>All</option>
+                                <option value="1">Premium</option>
+                                <option value="2">Free</option>
+                            </select>
+                        </div>
+                        <div class="btn-toolbar mb-md-0">
+                            <a href="#" class="btn btn-primary-soft d-inline-flex align-items-center">
+                                <i class="bi bi-gear fs-6 fw-bold me-2"></i>
+                                Setting
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- TABELLL -->
+                    <div class="card card-body shadow border-0 table-wrapper table-responsive">
+                        <table class="table user-table table-hover align-items-center">
+                            <thead>
+                                <tr>
+                                    <th class="border-bottom">User</th>
+                                    <th class="border-bottom">Exam</th>
+                                    <th class="border-bottom">Tanggal</th>
+                                    <th class="border-bottom">Grade</th>
+                                    <th class="border-bottom">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="d-flex align-items-center">
+                                            <img src="assets/images/user.png"
+                                                class="avatar avatar-xxs rounded-circle me-3" alt="Avatar">
+                                            <div class="d-block">
+                                                <span class="fw-bold">Liu Purnomo</span>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td><span class="fw-normal">Ujian 1</span></td>
+                                    <td><span class="fw-normal">12 Mei 2023</span></td>
+                                    <td><span class="fw-normal text-success">100</span></td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-link text-dark dropdown-toggle-split m-0 p-0"
+                                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <svg class="icon icon-xs" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                            <div class="dropdown-menu dashboard-dropdown dropdown-menu-start mt-2 py-1">
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <i class="bi bi-envelope fs-6 text-success me-2"></i>
+                                                    Send result
+                                                </a>
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <i class="bi bi-globe me-2"></i>
+                                                    Publish Result
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                        <svg class="icon icon-xs text-danger ms-1" title="Delete"
+                                            data-bs-toggle="tooltip" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="d-flex align-items-center">
+                                            <img src="assets/images/user.png"
+                                                class="avatar avatar-xxs rounded-circle me-3" alt="Avatar">
+                                            <div class="d-block">
+                                                <span class="fw-bold">Liu Purnomo</span>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td><span class="fw-normal">Ujian 1</span></td>
+                                    <td><span class="fw-normal">12 Mei 2023</span></td>
+                                    <td><span class="fw-normal text-success">100</span></td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-link text-dark dropdown-toggle-split m-0 p-0"
+                                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <svg class="icon icon-xs" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                            <div class="dropdown-menu dashboard-dropdown dropdown-menu-start mt-2 py-1">
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <i class="bi bi-envelope fs-6 text-success me-2"></i>
+                                                    Send result
+                                                </a>
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <i class="bi bi-globe me-2"></i>
+                                                    Publish Result
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                        <svg class="icon icon-xs text-danger ms-1" title="Delete"
+                                            data-bs-toggle="tooltip" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="d-flex align-items-center">
+                                            <img src="assets/images/user.png"
+                                                class="avatar avatar-xxs rounded-circle me-3" alt="Avatar">
+                                            <div class="d-block">
+                                                <span class="fw-bold">Liu Purnomo</span>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td><span class="fw-normal">Ujian 1</span></td>
+                                    <td><span class="fw-normal">12 Mei 2023</span></td>
+                                    <td><span class="fw-normal text-success">100</span></td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-link text-dark dropdown-toggle-split m-0 p-0"
+                                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <svg class="icon icon-xs" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                            <div class="dropdown-menu dashboard-dropdown dropdown-menu-start mt-2 py-1">
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <i class="bi bi-envelope fs-6 text-success me-2"></i>
+                                                    Send result
+                                                </a>
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <i class="bi bi-globe me-2"></i>
+                                                    Publish Result
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <svg class="icon icon-xs text-danger ms-1" title="Delete"
+                                            data-bs-toggle="tooltip" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="d-flex align-items-center">
+                                            <img src="assets/images/user.png"
+                                                class="avatar avatar-xxs rounded-circle me-3" alt="Avatar">
+                                            <div class="d-block">
+                                                <span class="fw-bold">Liu Purnomo</span>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td><span class="fw-normal">Ujian 1</span></td>
+                                    <td><span class="fw-normal">12 Mei 2023</span></td>
+                                    <td><span class="fw-normal text-success">100</span></td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-link text-dark dropdown-toggle-split m-0 p-0"
+                                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <svg class="icon icon-xs" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                            <div class="dropdown-menu dashboard-dropdown dropdown-menu-start mt-2 py-1">
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <i class="bi bi-envelope fs-6 text-success me-2"></i>
+                                                    Send result
+                                                </a>
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <i class="bi bi-globe me-2"></i>
+                                                    Publish Result
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                        <svg class="icon icon-xs text-danger ms-1" title="Delete"
+                                            data-bs-toggle="tooltip" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        <div
+                            class="card-footer px-3 border-0 d-flex flex-column flex-lg-row align-items-center justify-content-between">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination mb-0">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Previous</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item active">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">4</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">5</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="fw-normal small mt-4 mt-lg-0">Showing <b>5</b> out of <b>25</b> entries</div>
+                        </div>
+                    </div>
+                    <!-- Share feed START -->
+
+                    <!-- User Grade List START -->
+
+                    <!-- Page Header START -->
+                    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
+                        <div class="d-block mb-2 mb-md-0">
+                            <h2 class="h4">Detail Ujian 1</h2>
+                            <p class="mb-0">Informasi detail ujian 1</p>
+                        </div>
+                        <div class="btn-toolbar mb-2 mb-md-0">
+                            <div class="btn-group ms-2 ms-lg-3">
+                                <button type="button" class="btn btn-outline-danger"> <i class="bi bi-trash me-2"></i>
+                                    Delete
+                                    Exam</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Page Header End -->
+                    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-2">
+                        <div class="col-lg-9 d-md-flex">
+                            <div class="input-group me-2 me-lg-3 fmxw-300">
+                                <span class="input-group-text">
+                                    <i class="bi bi-search"></i>
+                                </span>
+                                <input type="text" class="form-control" placeholder="Search examination result">
+                            </div>
+                        </div>
+                        <div class="btn-toolbar mb-md-0">
+                            <a href="#" class="btn btn-primary-soft d-inline-flex align-items-center">
+                                <i class="bi bi-cloud-download fs-6 fw-bold me-2"></i>
+                                Export
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- TABELLL -->
+                    <div class="card card-body shadow border-0 table-wrapper table-responsive">
+                        <table class="table user-table table-hover align-items-center">
+                            <thead>
+                                <tr>
+                                    <th class="border-bottom">User</th>
+                                    <th class="border-bottom">Tanggal</th>
+                                    <th class="border-bottom">Grade</th>
+                                    <th class="border-bottom">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="d-flex align-items-center">
+                                            <img src="assets/images/user.png"
+                                                class="avatar avatar-xxs rounded-circle me-3" alt="Avatar">
+                                            <div class="d-block">
+                                                <span class="fw-bold">Liu Purnomo</span>
+                                            </div>
+                                        </a>
+                                    </td>
+
+                                    <td><span class="fw-normal">12 Mei 2023</span></td>
+                                    <td><span class="fw-normal text-success">100</span></td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-link text-dark dropdown-toggle-split m-0 p-0"
+                                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <svg class="icon icon-xs" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                            <div class="dropdown-menu dashboard-dropdown dropdown-menu-start mt-2 py-1">
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <i class="bi bi-envelope fs-6 text-success me-2"></i>
+                                                    Send result
+                                                </a>
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <i class="bi bi-globe me-2"></i>
+                                                    Publish Result
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                        <svg class="icon icon-xs text-danger ms-1" title="Delete"
+                                            data-bs-toggle="tooltip" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="d-flex align-items-center">
+                                            <img src="assets/images/user.png"
+                                                class="avatar avatar-xxs rounded-circle me-3" alt="Avatar">
+                                            <div class="d-block">
+                                                <span class="fw-bold">Liu Purnomo</span>
+                                            </div>
+                                        </a>
+                                    </td>
+
+                                    <td><span class="fw-normal">12 Mei 2023</span></td>
+                                    <td><span class="fw-normal text-success">100</span></td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-link text-dark dropdown-toggle-split m-0 p-0"
+                                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <svg class="icon icon-xs" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                            <div class="dropdown-menu dashboard-dropdown dropdown-menu-start mt-2 py-1">
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <i class="bi bi-envelope fs-6 text-success me-2"></i>
+                                                    Send result
+                                                </a>
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <i class="bi bi-globe me-2"></i>
+                                                    Publish Result
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                        <svg class="icon icon-xs text-danger ms-1" title="Delete"
+                                            data-bs-toggle="tooltip" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="d-flex align-items-center">
+                                            <img src="assets/images/user.png"
+                                                class="avatar avatar-xxs rounded-circle me-3" alt="Avatar">
+                                            <div class="d-block">
+                                                <span class="fw-bold">Liu Purnomo</span>
+                                            </div>
+                                        </a>
+                                    </td>
+
+                                    <td><span class="fw-normal">12 Mei 2023</span></td>
+                                    <td><span class="fw-normal text-success">100</span></td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-link text-dark dropdown-toggle-split m-0 p-0"
+                                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <svg class="icon icon-xs" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                            <div class="dropdown-menu dashboard-dropdown dropdown-menu-start mt-2 py-1">
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <i class="bi bi-envelope fs-6 text-success me-2"></i>
+                                                    Send result
+                                                </a>
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <i class="bi bi-globe me-2"></i>
+                                                    Publish Result
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <svg class="icon icon-xs text-danger ms-1" title="Delete"
+                                            data-bs-toggle="tooltip" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="d-flex align-items-center">
+                                            <img src="assets/images/user.png"
+                                                class="avatar avatar-xxs rounded-circle me-3" alt="Avatar">
+                                            <div class="d-block">
+                                                <span class="fw-bold">Liu Purnomo</span>
+                                            </div>
+                                        </a>
+                                    </td>
+
+                                    <td><span class="fw-normal">12 Mei 2023</span></td>
+                                    <td><span class="fw-normal text-success">100</span></td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-link text-dark dropdown-toggle-split m-0 p-0"
+                                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <svg class="icon icon-xs" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                            <div class="dropdown-menu dashboard-dropdown dropdown-menu-start mt-2 py-1">
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <i class="bi bi-envelope fs-6 text-success me-2"></i>
+                                                    Send result
+                                                </a>
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <i class="bi bi-globe me-2"></i>
+                                                    Publish Result
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                        <svg class="icon icon-xs text-danger ms-1" title="Delete"
+                                            data-bs-toggle="tooltip" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        <div
+                            class="card-footer px-3 border-0 d-flex flex-column flex-lg-row align-items-center justify-content-between">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination mb-0">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Previous</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item active">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">4</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">5</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="fw-normal small mt-4 mt-lg-0">Showing <b>5</b> out of <b>25</b> entries</div>
+                        </div>
+                    </div>
+                    <!-- Share feed START -->
+                    <!-- Page Header START -->
+                    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
+                        <div class="d-block mb-2 mb-md-0">
+                            <h2 class="h4">Questions List</h2>
+                            <p class="mb-0">List question</p>
+                        </div>
+                        <div class="btn-toolbar mb-2 mb-md-0">
+                            <div class="btn-group ms-2 ms-lg-3">
+                                <button type="button" class="btn btn-outline-danger"> <i class="bi bi-trash me-2"></i>
+                                    Delete
+                                    Exam</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Page Header End -->
+                    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-2">
+                        <div class="col-lg-9 d-md-flex">
+                            <div class="input-group me-2 me-lg-3 fmxw-300">
+                                <span class="input-group-text">
+                                    <i class="bi bi-search"></i>
+                                </span>
+                                <input type="text" class="form-control" placeholder="Search Question">
+                            </div>
+                        </div>
+                        <div class="btn-toolbar mb-md-0">
+                            <a href="#" class="btn btn-primary-soft d-inline-flex align-items-center">
+                                <i class="bi bi-cloud-download fs-6 fw-bold me-2"></i>
+                                Import Question
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- TABELLL -->
+                    <div class="card card-body shadow border-0 table-wrapper table-responsive">
+                        <table class="table user-table table-hover align-items-center">
+                            <thead>
+                                <tr>
+                                    <th class="border-bottom">Question</th>
+                                    <th class="border-bottom">Status</th>
+                                    <th class="border-bottom">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="d-flex align-items-center">
+                                            <span class="fw-bold">Ini pertnyaan nomor 1</span>
+                                        </a>
+                                    </td>
+
+                                    <td><span class="fw-normal">Free</span></td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-link text-dark dropdown-toggle-split m-0 p-0"
+                                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <svg class="icon icon-xs" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                            <div class="dropdown-menu dashboard-dropdown dropdown-menu-start mt-2 py-1">
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <i class="bi bi-gear fs-6 text-success me-2"></i>
+                                                    Edit
+                                                </a>
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <i class="bi bi-globe me-2"></i>
+                                                    Change Status
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                        <svg class="icon icon-xs text-danger ms-1" title="Delete"
+                                            data-bs-toggle="tooltip" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="d-flex align-items-center">
+                                            <span class="fw-bold">Ini pertnyaan nomor 1</span>
+                                        </a>
+                                    </td>
+
+                                    <td><span class="fw-normal">Free</span></td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-link text-dark dropdown-toggle-split m-0 p-0"
+                                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <svg class="icon icon-xs" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                            <div class="dropdown-menu dashboard-dropdown dropdown-menu-start mt-2 py-1">
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <i class="bi bi-gear fs-6 text-success me-2"></i>
+                                                    Edit
+                                                </a>
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <i class="bi bi-globe me-2"></i>
+                                                    Change Status
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                        <svg class="icon icon-xs text-danger ms-1" title="Delete"
+                                            data-bs-toggle="tooltip" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="d-flex align-items-center">
+                                            <span class="fw-bold">Ini pertnyaan nomor 1</span>
+                                        </a>
+                                    </td>
+
+                                    <td><span class="fw-normal">Free</span></td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-link text-dark dropdown-toggle-split m-0 p-0"
+                                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <svg class="icon icon-xs" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                            <div class="dropdown-menu dashboard-dropdown dropdown-menu-start mt-2 py-1">
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <i class="bi bi-gear fs-6 text-success me-2"></i>
+                                                    Edit
+                                                </a>
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <i class="bi bi-globe me-2"></i>
+                                                    Change Status
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                        <svg class="icon icon-xs text-danger ms-1" title="Delete"
+                                            data-bs-toggle="tooltip" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="d-flex align-items-center">
+                                            <span class="fw-bold">Ini pertnyaan nomor 1</span>
+                                        </a>
+                                    </td>
+
+                                    <td><span class="fw-normal">Free</span></td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-link text-dark dropdown-toggle-split m-0 p-0"
+                                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <svg class="icon icon-xs" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                            <div class="dropdown-menu dashboard-dropdown dropdown-menu-start mt-2 py-1">
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <i class="bi bi-gear fs-6 text-success me-2"></i>
+                                                    Edit
+                                                </a>
+                                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <i class="bi bi-globe me-2"></i>
+                                                    Change Status
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                        <svg class="icon icon-xs text-danger ms-1" title="Delete"
+                                            data-bs-toggle="tooltip" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        <div
+                            class="card-footer px-3 border-0 d-flex flex-column flex-lg-row align-items-center justify-content-between">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination mb-0">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Previous</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item active">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">4</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">5</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="fw-normal small mt-4 mt-lg-0">Showing <b>5</b> out of <b>25</b> entries</div>
+                        </div>
+                    </div>
+                    <!-- Share feed START -->
+
+                    <!-- Card feed item START -->
+                    <div class="card">
+                        <!-- Card header START -->
+                        <div class="card-header border-0 pb-0">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+
+                                    <div>
+                                        <h6 class="card-title mb-0"> <a href="#"> Exam Title </a></h6>
+                                        <div class="nav nav-divider">
+                                            <p class="nav-item mb-0 small">Open</p>
+                                            <span class="nav-item small" data-bs-toggle="tooltip"
+                                                data-bs-placement="top" title="Public"> <i class="bi bi-globe"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <a href="#" class="btn btn-primary-soft">
+                                        Take this Exam
+                                    </a>
+                                </div>
+                                <!-- Card share action END -->
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <p>Exam description</p>
+
+                            <ul class="nav nav-stack py-3 small">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-secondary" href="#!"> <i
+                                            class="bi bi-heart-fill me-1 icon-xs bg-danger text-white rounded-circle"></i>
+                                        126 Examiner </a>
+                                </li>
+                                <li class="nav-item nav-item ms-sm-auto dropdown">
+                                    <a href="#" class="nav-link mb-0" id="cardShareAction4" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <i class="bi bi-reply-fill flip-horizontal ps-1"></i>Share
+                                    </a>
+                                    <!-- Card share action dropdown menu -->
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardShareAction4">
+                                        <li><a class="dropdown-item" href="#"> <i
+                                                    class="bi bi-envelope fa-fw pe-2"></i>Send via Direct Message</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#"> <i class="bi bi-link fa-fw pe-2"></i>Copy
+                                                link exam</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <ul
+                                class="nav nav-pills nav-pills-light nav-fill nav-stack small border-top border-bottom py-1 mb-1">
+                                <li class="nav-item">
+                                    <a class="nav-link mb-0" href="#!"><i class="bi bi-globe pe-1"></i>
+                                        Free</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mb-0" href="#!"><i class="bi bi-mortarboard pe-1"></i>
+                                        120 Soal</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mb-0" href="#!"><i class="bi bi-key pe-1"></i> x12Jm</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mb-0" href="#!"><i class="bi bi-alarm pe-1"></i> 120 m</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <!-- Card header START -->
+                        <div class="card-header border-0 pb-0">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+
+                                    <div>
+                                        <h6 class="card-title mb-0"> <a href="#"> Exam Title </a></h6>
+                                        <div class="nav nav-divider">
+                                            <p class="nav-item mb-0 small">Open</p>
+                                            <span class="nav-item small" data-bs-toggle="tooltip"
+                                                data-bs-placement="top" title="Public"> <i class="bi bi-globe"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <a href="#" class="btn btn-success-soft">
+                                        See your point
+                                    </a>
+                                </div>
+                                <!-- Card share action END -->
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <p>Exam description</p>
+
+                            <ul class="nav nav-stack py-3 small">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-secondary" href="#!"> <i
+                                            class="bi bi-heart-fill me-1 icon-xs bg-danger text-white rounded-circle"></i>
+                                        126 Examiner </a>
+                                </li>
+                                <li class="nav-item nav-item ms-sm-auto dropdown">
+                                    <a href="#" class="nav-link mb-0" id="cardShareAction4" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <i class="bi bi-reply-fill flip-horizontal ps-1"></i>Share
+                                    </a>
+                                    <!-- Card share action dropdown menu -->
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardShareAction4">
+                                        <li><a class="dropdown-item" href="#"> <i
+                                                    class="bi bi-envelope fa-fw pe-2"></i>Send via Direct Message</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#"> <i class="bi bi-link fa-fw pe-2"></i>Copy
+                                                link exam</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <ul
+                                class="nav nav-pills nav-pills-light nav-fill nav-stack small border-top border-bottom py-1 mb-1">
+                                <li class="nav-item">
+                                    <a class="nav-link mb-0" href="#!"><i class="bi bi-globe pe-1"></i>
+                                        Free</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mb-0" href="#!"><i class="bi bi-mortarboard pe-1"></i>
+                                        120 Soal</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mb-0" href="#!"><i class="bi bi-key pe-1"></i> x12Jm</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mb-0" href="#!"><i class="bi bi-alarm pe-1"></i> 120 m</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Card feed item END -->
+
+                    <div class="card">
+                        <!-- Card header START -->
+                        <div class="card-header border-0 pb-0">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+
+                                    <div>
+                                        <h6 class="card-title mb-0"> <a href="#"> Exam Title </a></h6>
+                                        <div class="nav nav-divider">
+                                            <p class="nav-item mb-0 small">Open</p>
+                                            <span class="nav-item small" data-bs-toggle="tooltip"
+                                                data-bs-placement="top" title="Public"> <i class="bi bi-globe"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <a href="#" class="btn btn-success-soft">
+                                        See your point
+                                    </a>
+                                </div>
+                                <!-- Card share action END -->
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <p>Exam description</p>
+
+                            <ul class="nav nav-stack py-3 small">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-secondary" href="#!"> <i
+                                            class="bi bi-heart-fill me-1 icon-xs bg-danger text-white rounded-circle"></i>
+                                        126 Examiner </a>
+                                </li>
+                                <li class="nav-item nav-item ms-sm-auto dropdown">
+                                    <a href="#" class="nav-link mb-0" id="cardShareAction4" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <i class="bi bi-reply-fill flip-horizontal ps-1"></i>Share
+                                    </a>
+                                    <!-- Card share action dropdown menu -->
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardShareAction4">
+                                        <li><a class="dropdown-item" href="#"> <i
+                                                    class="bi bi-envelope fa-fw pe-2"></i>Send via Direct Message</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#"> <i class="bi bi-link fa-fw pe-2"></i>Copy
+                                                link exam</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <ul
+                                class="nav nav-pills nav-pills-light nav-fill nav-stack small border-top border-bottom py-1 mb-1">
+                                <li class="nav-item">
+                                    <a class="nav-link mb-0" href="#!"><i class="bi bi-globe pe-1"></i>
+                                        Premium</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mb-0" href="#!"><i class="bi bi-mortarboard pe-1"></i>
+                                        120 Soal</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mb-0" href="#!"><i class="bi bi-key pe-1"></i> **** </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mb-0" href="#!"><i class="bi bi-alarm pe-1"></i> 120 m</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Card feed item END -->
+
+                    <!-- Load more button START -->
+                    <a href="#!" role="button" class="btn btn-loader btn-primary-soft" data-bs-toggle="button"
+                        aria-pressed="true">
+                        <span class="load-text"> Load more </span>
+                        <div class="load-icon">
+                            <div class="spinner-grow spinner-grow-sm" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Load more button END -->
+
+                    <!-- PEMBAHASAN START -->
+                    <div class="card">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Pembahasan Hasil Ujian</h4>
+                                <p class="lead">Detail Ujian</p>
+                            </div>
+                            <div class="card-body">
+                                <div>
+                                    <button class="btn  btn-success btn-rounded-phill w-100"> Soal No. 1 </button>
+
+                                    <h5 class="pt-2 pb-2"> Ini pertanyaannya </h5>
+                                    <ul>
+                                        <li>Jawaban Anda :
+                                            Anda jawab begini
+                                        </li>
+                                        <li>Jawaban Benar adalah :
+                                            Ini jawaban yang benarnya
+                                        </li>
+                                    </ul>
+                                    <h5>Penjelasannya</h5>
+                                    <hr>
+                                    <p>Ini penjelasannya</p>
+                                </div>
+                                <div>
+                                    <button class="btn  btn-danger btn-rounded-phill w-100"> Soal No. 2 </button>
+
+                                    <h5 class="pt-2 pb-2"> Ini pertanyaannya </h5>
+                                    <ul>
+                                        <li>Jawaban Anda :
+                                            Anda jawab begini
+                                        </li>
+                                        <li>Jawaban Benar adalah :
+                                            Ini jawaban yang benarnya
+                                        </li>
+                                    </ul>
+                                    <h5>Penjelasannya</h5>
+                                    <hr>
+                                    <p>Ini penjelasannya</p>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <h5>Jumlah Jawaban Benar = 1 </h5>
+                                <h5>Nilai Anda Adalah = 50 </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PEMBAHASAN END -->
+
+
+                </div>
+            </div>
+            <!-- Page Confirmation Start Exam START -->
+
+            <div class="row g-4 mb-4">
+                <!-- Right sidebar START -->
+                <div class="col-md-6">
+                    <div class="row g-4">
+                        <!-- Card follow START -->
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <!-- Card header START -->
+                                <div class="card-header pb-0 border-0">
+                                    <h2 class="text-danger"><i class="bi bi-exclamation-diamond-fill"></i> Warning</h2>
+                                </div>
+                                <!-- Card header END -->
+                                <!-- Card body START -->
+                                <div class="card-body">
+                                    <div class="d-grid mt-3">
+                                        <p class="lead">Read this carefully</p>
+                                        <div class="alert alert-warning" role="alert">
+                                            <strong>Note: </strong>Anda hanya bisa mengikuti ujian ini sekali!
+                                        </div>
+                                        <ul>
+                                            <li>Waktu akan dihitung dari anda klik tombol start.</li>
+                                            <li>Pastikan Anda menyelesaikan ujian sebelum waktu berakhir, waktu bisa
+                                                dilihat di pojok kanan atas.</li>
+                                            <li>Jika waktu berakhir, dan anda belum selesai ujian, maka anda
+                                                dianggap <strong><i>SUDAH</i></strong> mengikuti ujian, dan nilai ujian
+                                                berdasarkan berapa banyak <strong>jawaban benar</strong> yang anda
+                                                pilih!</li>
+                                            <li>Ingat, anda hanya boleh mengerjakan ujian sekali!</li>
+                                            <li>Pastikan jaringan internet anda normal</li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <!-- Card body END -->
+                            </div>
+                        </div>
+                        <!-- Card follow START -->
+                    </div>
+                </div>
+                <!-- Right sidebar END -->
+                <!-- Main content START -->
+                <div class="col-md-6">
+                    <!-- Card feed item START -->
+                    <div class="card">
+                        <div class="card-body pb-2 mb-4">
+                            <div class="vstack gap-2">
+                                <!-- Feed poll item -->
+                                <div>
+                                    <h3 class="text-center">
+                                        Judul Ujian
+                                    </h3>
+
+                                    <p class="lead text-center"> Ini Penjelasannya</p>
+
+                                    <table class="table user-table table-hover align-items-center">
+                                        <tr>
+                                            <th>Status</th>
+                                            <td>Premium</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Total question</th>
+                                            <td>20 questions</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Duration</th>
+                                            <td>20 minutes</td>
+                                        </tr>
+                                    </table>
+                                    <form action="">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="col-6 form-group">
+                                                <input name="pin" type="text" class="form-control"
+                                                    placeholder="input PIN here" required>
+                                            </div>
+                                            <div>
+                                                <button class="btn btn-danger">Cancel</button>
+                                                <button class="btn btn-success px-4" type="submit">Start</button>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Card body END -->
+                    </div>
+                    <!-- Card feed item END -->
+                </div>
+                <!-- Main content END -->
+            </div>
+            <!-- Page Confirmation Start Exam END -->
+
+            <!-- WAKTU HABIS START -->
+            <div class="row g-4 mb-4">
+
+                <!-- Sidenav START -->
+                <div class="col-lg-3">
+                </div>
+                <!-- Sidenav END -->
+
+                <!-- Main content START -->
+                <div class="col-md-8 col-lg-6 vstack gap-4">
+
+                    <!-- Card feed item START -->
+                    <div class="card">
+                        <!-- Card header START -->
+                        <!-- Card body START -->
+                        <div class="card-body text-center">
+                            <img class="card-img p-5 m-2" src="assets/images/clock.gif" alt="habis waktu">
+                            <h1>Time's Up!</h1>
+                            <!-- Card img -->
+                            <p>Anda kehabisan waktu, dan dianggap sudah menyelesaikan ujian!</p>
+                            <a href="#" class="btn btn-primary mb-4">See result</a>
+                        </div>
+                    </div>
+                    <!-- Card feed item END -->
+
+                </div>
+                <!-- Main content END -->
+
+                <!-- Right sidebar START -->
+                <div class="col-lg-3">
+                </div>
+                <!-- Right sidebar END -->
+
+            </div> <!-- Row END -->
+            <!-- WAKTU HABIS END -->
+
+            <!--- RESULT START -->
+            <div class="row g-4 mb-4">
+
+                <!-- Sidenav START -->
+                <div class="col-lg-3">
+                </div>
+                <!-- Sidenav END -->
+
+                <!-- Main content START -->
+                <div class="col-md-8 col-lg-6 vstack gap-4">
+
+                    <!-- Card feed item START -->
+                    <div class="card">
+                        <!-- Card header START -->
+                        <!-- Card body START -->
+                        <div class="card-body text-center">
+
+                            <h1 class="text-primary">Selamat
+                                Anda Lulus
+                            </h1>
+                            <img class=" p-5" src="assets/images/success.jpeg" alt="habis waktu">
+                            <h4> Nilai Anda Adalah 50 </h4>
+                            <p> Jumlah Soal 20</p>
+                            <p> Jumlah jawaban benar 5
+                            </p>
+                            <!-- Card img -->
+
+                            <h1 class="text-primary">Maaf Anda Gagal
+                            </h1>
+                            <img class="card-img p-4" src="assets/images/failed.png" alt="habis waktu">
+
+                            <h4> Nilai Anda Adalah 50 </h4>
+                            <p> Jumlah Soal 20</p>
+                            <p> Jumlah jawaban benar 5 </p>
+                            <a href="https://remotepilot.id/member" class="btn btn-primary">Dashboard</a>
+                        </div>
+                    </div>
+                    <!-- Card feed item END -->
+
+                </div>
+                <!-- Main content END -->
+
+                <!-- Right sidebar START -->
+                <div class="col-lg-3">
+                </div>
+                <!-- Right sidebar END -->
+
+            </div> <!-- Row END -->
+            <!--- RESULT END -->
+
+
+        </div> <!---CONTAINER CLOSE TAG-->
+    </main>
+    <!-- **************** MAIN CONTENT END **************** -->
+
+    <!-- Modal create exams START -->
+    <div class="modal fade" id="modalCreateEvents" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabelCreateAlbum">Create new exam</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <label class="form-label">Title</label>
+                                <input type="text" class="form-control" placeholder="Exam title here" required>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Description</label>
+                                <textarea class="form-control" rows="2"
+                                    placeholder="Ex: topics, schedule, etc."></textarea>
+                            </div>
+                            <div class="col-sm-6">
+                                <label class="form-label">Total Questions</label>
+                                <input type="number" class="form-control" placeholder="Set total questions" required>
+                            </div>
+                            <div class="col-sm-6">
+                                <label class="form-label">Duration</label>
+                                <input type="number" class="form-control" placeholder="Set total durations" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer row justify-content-between">
+                        <div class="col-lg-4">
+                            <select class="form-select">
+                                <option value="Free">Free</option>
+                                <option value="Premium">Premium</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-6 text-sm-end">
+                            <button type="button" class="btn btn-danger-soft me-2" data-bs-dismiss="modal">
+                                Cancel</button>
+                            <button type="submit" class="btn btn-success-soft">Create now</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Modal create exams START -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
